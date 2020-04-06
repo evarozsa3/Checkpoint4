@@ -8,6 +8,9 @@ const weatherApi = axios.create({
 });
 
 class WeatherService {
+  constructor() {
+    console.log("weather service is working")
+  }
   async getWeather() {
     console.log("Calling the Weatherman");
     let res = await weatherApi.get();

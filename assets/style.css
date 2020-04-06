@@ -1,7 +1,9 @@
 body{
-  background-size: cover !important;
+  background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
 
 }
 

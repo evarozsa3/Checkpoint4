@@ -1,7 +1,6 @@
 import store from "../store.js";
 
 // @ts-ignore
-
 const imgApi = axios.create({
   baseURL: "//bcw-sandbox.herokuapp.com/api/images",
   timeout: 8000
@@ -14,9 +13,9 @@ class ImageService {
   }
 
   getImage() {
-    imgApi
-      .get("")
+    imgApi.get("")
       .then(res => {
+        let data = new Image(res.data)
         console.log(res)
         store.commit("images", res.data)
       })
