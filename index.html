@@ -16,29 +16,31 @@
 </head>
 
 <body id="bg-image">
-	<main class="container-fluid">
-		<div id="weather">
-			Your Weather Template
-		</div>
-
-		<div id="quote">
-			The Quote
-		</div>
-
-
-
+	<header class="container-fluid">
 		<div class="row todo-box text-light justify-content-center">
-			<div id="todo-error"></div>
 			<form onsubmit="app.todoController.addTodo(event)">
-				<div><input type="text" name="Description" class="form-group input-bar" id="Description"
+				<div><input type="text" name="Description" class="form-group input-bar h-5" id="Description"
 						placeholder="todo here..." required>
-					<button type="submit" class="btn text-danger">+</button></div>
+					<button type="submit" class="btn text-danger">+</button>
+				</div>
+				<div class="col-12 m-0" id="count"></div>
+				<!-- add count ID here -->
+				<div class="col-12" id="todos"></div>
 			</form>
-			<div class="col-12" id="count"></div>
-			<!-- add count ID here -->
-			<div class="col-12" id="todos"></div>
-
+		</div>
+	</header>
+	<main class="container-fluid">
+		<div id="weather" class="row pl-3 ml-5 mt-5 weather">
+			<div class="col-4">
+				Your Weather Template
+			</div>
+		</div>
 	</main>
+	<footer class="container-fluid bg-transparant fixed-bottom">
+		<div class="row quote">
+			<div class="col-12 text-center" id="quote"></div>
+		</div>
+	</footer>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 		crossorigin="anonymous"></script>

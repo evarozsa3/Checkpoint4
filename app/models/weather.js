@@ -16,6 +16,9 @@ export default class Weather {
   get weatherTemplate() {
     return `
     <span>${this.temp}°</span>
+    	<img
+				src="https://lh3.googleusercontent.com/proxy/7AM5-QLV8iLcDyPQC1ba62tWtqZ2LnFeqRDB8GyMhq7WshhjkGi4-ePQ9Nvzd_VUM9V1RmmpccUClmfqlTGH7-ZtuPCU2ACQLaBexChd5d0co3wHKI00PSQYc_4sc--QpZ3i2USvM7z9M6tmw2_PFBR-jQ"
+				class="w-img" alt="">
     <span>${this.city}</span>
     `
   }

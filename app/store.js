@@ -1,6 +1,6 @@
 import Weather from "./models/weather.js";
 import Todo from "./models/todo.js";
-import Quote from "./models/quote.js"
+import Quote from "./models/quote.js";
 
 
 let _state = {

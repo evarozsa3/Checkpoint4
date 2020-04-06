@@ -13,7 +13,7 @@ function _drawTodos() {
     }
   })
   document.getElementById("todos").innerHTML = template
-  document.getElementById("count").innerHTML = `<p>Todo Count: ${todos.length}</p>`
+  document.getElementById("count").innerHTML = `<p> ${todos.length} to do</p>`
 
 }
 

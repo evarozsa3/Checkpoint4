@@ -1,9 +1,7 @@
 body{
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
 
 }
 
@@ -14,11 +12,39 @@ body{
   max-height: 30vh;
   overflow-y: scroll;
   scrollbar-width: 0px;
-margin-left: 65vw;
-background-color: rgba(0, 0, 0, 0.377);
+background-color: rgba(0, 0, 0, 0.452);
+margin-left: 70vw;
+position: fixed;
+top: 7vh;
+
 }
 
 .btn{
   font-size: 40px;
-  
+  margin-bottom: 22px;
+}
+
+.quote{
+  background-color: rgba(0, 0, 0, 0.507);
+    border: black solid 2px;
+ color: cornsilk;
+}
+
+.weather{
+  border: black solid 2px;
+  background-color: rgba(0, 0, 0, 0.466);
+  color: aliceblue;
+  width: 10vw;
+  text-align: center;
+  font-size: 40px;
+  position: fixed;
+ 
+}
+.w-img{
+  height: 45px;
+  width: 55px;
+  margin-left: 70px;
+  margin-top: 20px;
+  z-index:1;
+  position: fixed;
 }
